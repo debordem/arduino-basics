@@ -10,9 +10,11 @@
  Also prints the results to the serial monitor.
 
  The circuit:
- * Photo Diode connected to analog pin 0. 100K resistor
+ * Photo Diode connected to analog pin 0. 100K resistor pull up resistor.
    
  * LED connected from digital pin 9 to ground
+ * 
+ 
 
  created 29 Dec. 2008
  modified 9 Apr 2012
