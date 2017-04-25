@@ -1,3 +1,17 @@
+// http://wiki.52pi.com/index.php/RPI-RGB-LED-Matrix_SKU:EP-0075#How_to_use_it
+
+/*  LED MATRIX V1.0
+ * VCC  +5V
+ * CLK  -CLOCK - 13
+ * CE - Chip Enable/Chip Select -10
+ * MOSI - Data Input - 12
+ * GND GND
+ * 
+ * 
+ * 
+ */
+
+
 #include <SPI.h>
 
 static uint8_t data[4] = {0x0, 0x0, 0x0, 0x0};
@@ -90,12 +104,12 @@ void setup() {
 void loop()
 {
   int m = 10;
-  for ( m = 10; m > 0; m--) {
+  for ( m = 20; m > 0; m--) {
     heartbig();
   };
   matrixoff();
-  delay(500);
-  for ( m = 10; m > 0; m--) {
+ delay(500);
+ for ( m = 10; m > 0; m--) {
     heartsmall();
   };
   matrixoff();
