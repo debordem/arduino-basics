@@ -7,13 +7,15 @@
 ** LICENSE: GNU General Public License, version 3 (GPL-3.0)
 
 ** This example uses F Malpartida's NewLiquidCrystal library. Obtain from:
-** https://bitbucket.org/fmalpartida/new-liquidcrystal 
+** https://bitbucket.org/fmalpartida/new-liquidcrystal
 
 ** Modified - Ian Brennan ianbren at hotmail.com 23-10-2012 to support Tutorial posted to Arduino.cc
 
 ** Written for and tested with Arduino 1.0
 **
-** NOTE: Tested on Arduino Uno whose I2C pins are A4==SDA, A5==SCL
+** NOTE: Tested on Arduino Uno whose I2C pins are A4==SDA, A5==
+
+** for a 16x2 or 20x4
 
 */
 #include <Wire.h>
@@ -38,13 +40,13 @@ void setup()
 {
  lcd.begin (20,4); //  <<----- 16x2, or 20x4
 
- 
+
 // Switch on the backlight
 lcd.setBacklightPin(BACKLIGHT_PIN,POSITIVE);
 lcd.setBacklight(HIGH);
 lcd.home (); // go home
 
- lcd.print("SainSmartI2C16x2");  
+ lcd.print("SainSmartI2C16x2");
 }
 
 void loop()
