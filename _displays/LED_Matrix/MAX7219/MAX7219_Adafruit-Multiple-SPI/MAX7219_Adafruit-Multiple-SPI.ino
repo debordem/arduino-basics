@@ -1,17 +1,18 @@
 // https://github.com/markruys/arduino-Max72xxPanel
 /* THis works with 1X4 Module
- *  
+ *  Download the library zip files and Add Zip file
  */
 #include <SPI.h>
 #include <Adafruit_GFX.h>
 #include <Max72xxPanel.h>
 
-/*  LED MATRIX V1.0
- * VCC  +5V
- * CLK  -CLOCK - 13
- * CE - Chip Enable/Chip Select -10
- * MOSI - Data Input - 12
- * GND GND
+/*   PIN Connections
+ * _______|_______________|____ 
+ * | VCC  |               | +5V
+ * | CLK  | -CLOCK        | 13
+ * | CE   |- CE /CS       | 10
+ * | MOSI | - Data Input  | 12
+ * | GND  |               | GND
  */
 
 int pinCS = 10; // Attach CS to this pin, DIN to MOSI and CLK to SCK (cf http://arduino.cc/en/Reference/SPI )
