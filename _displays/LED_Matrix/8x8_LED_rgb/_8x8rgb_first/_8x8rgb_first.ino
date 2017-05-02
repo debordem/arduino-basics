@@ -6,9 +6,6 @@
  * CE - Chip Enable/Chip Select -10
  * MOSI - Data Input - 12
  * GND GND
- * 
- * 
- * 
  */
 
 
