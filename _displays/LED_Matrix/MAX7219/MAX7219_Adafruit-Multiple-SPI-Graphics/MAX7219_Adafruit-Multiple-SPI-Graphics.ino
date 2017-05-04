@@ -32,10 +32,20 @@ int width = 5 + spacer; // The font width is 5 pixels
 
 
 // can I draw a hearst with GFX?
+/*byte array for heart
+ * 
+ */
+static uint8_t heart[8] = {0x66, 0xFF, 0xFF, 0xFF, 0x7E, 0x3C, 0x18, 0x00};
+/*byte array for face
+ * 
+ */
+static uint8_t face[8] = {0x3C, 0x7E, 0xFF, 0xFF, 0xFF, 0xFF, 0x7E, 0x3C};
 
 void setup() {
 
-  matrix.setIntensity(7); // Use a value between 0 and 15 for brightness
+  Serial.begin(9600); // for debugging
+
+  matrix.setIntensity(1); // Use a value between 0 and 15 for brightness
 
 // Adjust to your own needs
 //  matrix.setPosition(0, 0, 0); // The first display is at <0, 0>
@@ -50,10 +60,10 @@ void setup() {
 }
 
 void loop() {
-  //ticker();
-  //drawHeart();  
-  //drawFace();
-  moveFace();
+  ticker();
+  drawHeart();  
+  drawFace();
+  moveHeart();
 }
 
 /*
@@ -61,10 +71,10 @@ void loop() {
  * to convert binary 0 and 1 to hex
  */
 
-// draw symbol of heart
+// draw symbol of heart wuth a byte array
 void drawHeart() {
   // methods from Adafruit_GFX
-   static uint8_t heart[8] = {0x66, 0xFF, 0xFF, 0xFF, 0x7E, 0x3C, 0x18, 0x00};
+   
    matrix.drawBitmap(0, 0, heart, 8, 8, true);
    matrix.write(); // Send bitmap to display
     
@@ -76,10 +86,10 @@ void drawHeart() {
 
 
 
-// draw symbol of face with shapes
+// draw symbol of face with a byte array
 void drawFace() {
   // methods from Adafruit_GFX
-   static uint8_t face[8] = {0x3C, 0x7E, 0xFF, 0xFF, 0xFF, 0xFF, 0x7E, 0x3C};
+   
    matrix.drawBitmap(0, 0, face, 8, 8, true);
    matrix.write(); // Send bitmap to display
     
@@ -88,21 +98,31 @@ void drawFace() {
    matrix.fillScreen(false);
 
 }
+/* To animate, draw the bitmap in the first position
+ *  draw another behind or following it offset to the width + a spacer
+ *  write to the screen
+ */
 
-void moveFace(){
-
-  
-         for(int16_t x=-8;x++;x>=8){
+void moveHeart(){
+         
+         for(int x=0; x<=8; x++){
            matrix.fillScreen(LOW);
-           static uint8_t heart[8] = {0x66, 0xFF, 0xFF, 0xFF, 0x7E, 0x3C, 0x18, 0x00};
-            matrix.drawBitmap(x, 0, heart, 8, 8, true);
+           Serial.println(x); // for debugging position of x
+           
+            matrix.drawBitmap(x, 0, heart, 8, 8, true); // leading image
+            
+            matrix.drawBitmap(x-9, 0, heart, 8, 8, true); // trailing image
             matrix.write(); // Send bitmap to display
-           matrix.write();
+        
            delay(100);
          }
+         
 
    }
 
+/*A ticker ot text across the display
+ * 
+ */
 
 void ticker(){
 
