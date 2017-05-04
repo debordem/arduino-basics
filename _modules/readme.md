@@ -5,7 +5,7 @@
 * KY-002 Vibration switch module
 * KY-003 Hall magnetic sensor module
 * KY-004 Key switch module
-* KY-005 Infrared emission sensor module
+* [KY-005 Infrared emission sensor module](https://tkkrlab.nl/wiki/Arduino_KY-005_Infrared_emission_sensor_module)
 * KY-006 Small passive buzzer module
 * KY-008 Laser sensor module
 * KY-009 3-color full-color LED SMD modules
@@ -20,7 +20,7 @@
 * KY-019 5V relay module
 * KY-020 Tilt switch module
 * KY-021 Mini magnetic reed modules
-* KY-022 Infrared sensor receiver module
+* [KY-022 Infrared sensor receiver module](https://tkkrlab.nl/wiki/Arduino_KY-022_Infrared_sensor_receiver_module)
 * KY-023 XY-axis joystick module
 * KY-024 Linear magnetic Hall sensors
 * KY-025 Reed module
