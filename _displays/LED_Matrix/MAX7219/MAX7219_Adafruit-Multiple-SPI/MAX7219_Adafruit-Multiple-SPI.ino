@@ -7,7 +7,7 @@
 #include <Max72xxPanel.h>
 
 /*   PIN Connections
- * _______|_______________|____ 
+ * _______|_______________|____
  * | VCC  |               | +5V
  * | CLK  | -CLOCK        | 13
  * | CE   |- CE /CS       | 10
@@ -16,16 +16,22 @@
  */
 
 int pinCS = 10; // Attach CS to this pin, DIN to MOSI and CLK to SCK (cf http://arduino.cc/en/Reference/SPI )
-int numberOfHorizontalDisplays = 4;
-int numberOfVerticalDisplays = 1;
 
+int numberOfHorizontalDisplays = 4; // Horizontal
+int numberOfVerticalDisplays = 1; // Vertical
+
+// Set up the panel
 Max72xxPanel matrix = Max72xxPanel(pinCS, numberOfHorizontalDisplays, numberOfVerticalDisplays);
 
+// tape is the variable for the string or message
 String tape = "DESIGN team";
 int wait = 20; // In milliseconds
 
 int spacer = 1;
 int width = 5 + spacer; // The font width is 5 pixels
+
+
+// can I draw a hearst with GFX?
 
 void setup() {
 
