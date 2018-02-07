@@ -12,7 +12,7 @@ int greenPin=10; //set green LED pin to 10
 int bluePin=9; //set blue LED pin to 9
 
 // set default brightness
-int blueBrightness=20; //Set Blue brightness to 100
+int blueBrightness=1; //Set Blue brightness to 100
  
 void setup() {
   // put your setup code here, to run once:
