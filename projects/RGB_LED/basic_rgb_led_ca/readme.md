@@ -4,9 +4,8 @@ Basic circuit and code to setup a Common Anode RGB RGB
 ### Image of Common Cathode and Common Anode RGB_LED
 
 
-![Image of LED](http://www.mikroblog.net/wp-content/uploads/2015/11/rgb-led-pinout.jpg)
+<img src="http://www.mikroblog.net/wp-content/uploads/2015/11/rgb-led-pinout.jpg" width="300">
 
-<img src="docs/Basic_RGB_LED_bb.png" width="200">
+<img src="docs/Basic_RGB_LED_bb.png" width="300">
 
-
-![Image of Schematic](./docs/Basic_RGB_LED_schem.png =250x)
+<img src="docs/Basic_RGB_LED_schem.png" width="300">
