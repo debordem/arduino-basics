@@ -6,8 +6,7 @@ Basic circuit and code to setup a Common Anode RGB RGB
 
 ![Image of LED](http://www.mikroblog.net/wp-content/uploads/2015/11/rgb-led-pinout.jpg)
 
+<img src="docs/Basic_RGB_LED_bb.png" width="200">
 
-
-![Image of Breadboard](./docs/Basic_RGB_LED_bb.png =250x)
 
 ![Image of Schematic](./docs/Basic_RGB_LED_schem.png =250x)
