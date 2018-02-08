@@ -7,7 +7,7 @@ Basic circuit and code to setup a Common Anode RGB RGB
 
 ### Breadboard layout of Common Anode RGB_LED
 
-<img src="docs/Basic_RGB_LED_bb.png" width="500">
+<img src="docs/Basic_RGB_LED_bb.png" width="600">
 
 ### Circuit Diagram of Common Cathode Basic_RGB_LED
 
