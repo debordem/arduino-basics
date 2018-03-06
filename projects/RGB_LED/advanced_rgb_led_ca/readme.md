@@ -14,4 +14,4 @@ Advanced circuit and code to setup a Common Anode RGB LED with a Potentiometer (
 <img src="docs/Advanced_RGB_LED_schem.png" width="500">
 
 
-<img src="docs/Advanced_RGB_LED_Flowchart.png" width="500">
+<img src="docs/Advanced_RGB_LED_Flowchart.png" width="800px">
