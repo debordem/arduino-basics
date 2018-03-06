@@ -12,3 +12,6 @@ Advanced circuit and code to setup a Common Anode RGB LED with a Potentiometer (
 ### Circuit Diagram of Common Cathode Basic_RGB_LED
 
 <img src="docs/Advanced_RGB_LED_schem.png" width="500">
+
+
+<img src="docs/Advanced_RGB_LED_Flowchart.svg" width="500">
