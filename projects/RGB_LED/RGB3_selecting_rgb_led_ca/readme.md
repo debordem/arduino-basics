@@ -9,10 +9,4 @@ Adding 3 buttons with 10K pull-up resistors
 
 ### Circuit Diagram of Common Cathode Advanced_RGB_LED
 
-<img src="docs/Selecting_RGB_LED_schem.png" width="500">
-
-### Flowchart of Common Cathode Advanced_RGB_LED
-With appropriate code
-{Right click and open image in new tab for bigger image}
-
-<img src="docs/Selecting_RGB_LED_Flowchart.png" width="800px">
+<img src="docs/Selecting_RGB_LED_schem.png" width="500px">
