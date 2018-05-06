@@ -7,7 +7,7 @@
 * KY-004 Key switch module
 * [KY-005 Infrared emission sensor module](https://tkkrlab.nl/wiki/Arduino_KY-005_Infrared_emission_sensor_module)
 * KY-006 Small passive buzzer module
-* KY-008 Laser sensor module
+* KY-008 ---
 * KY-009 3-color full-color LED SMD modules
 * KY-010 Optical broken module
 * KY-011 2-color LED module
@@ -15,7 +15,7 @@
 * KY-013 Temperature sensor module
 * KY-015 Temperature and humidity sensor module
 * KY-016 3-color LED module
-* KY-017 Mercury open optical module
+* KY-017 ---
 * KY-018 Photo resistor module
 * KY-019 5V relay module
 * KY-020 Tilt switch module
