@@ -13,7 +13,7 @@
 
 ** Written for and tested with Arduino 1.0
 **
-** NOTE: Tested on Arduino Uno whose I2C pins are A4==SDA, A5==
+** NOTE: Tested on Arduino Uno whose I2C pins are A4==SDA, A5==SCK
 
 ** for a 16x2 or 20x4
 
